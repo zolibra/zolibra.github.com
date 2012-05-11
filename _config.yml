@@ -1,12 +1,2 @@
 markdown: rdiscount
 pygments: true
-plugins: ./_plugins
-
-title: Zolibra
-url: http://zolibra.github.com
-feed: /atom.xml
-author:
-    name: zolibra
-    email: zolibra@gmail.com
-    twitter: twitter.com/zolibra
-description: 专注TMT

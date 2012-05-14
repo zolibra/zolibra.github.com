@@ -1,7 +1,7 @@
 ---
 layout: post
-styles: [syntax]
 title: think in algorithm <1>
+keywords: algorithm, bitmap, sort
 ---
 
 

@@ -9,22 +9,22 @@ title: think in algorithm <1>
   <tbody>
     <tr>
       <th></th>
-      <th>系统排序</th>
+      <th>System sort</th>
       <th>C++/STL</th>
       <th>C/qsort</th>
-      <th>C/位图</th>
+      <th>C/bitmap</th>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th>总时间</th>
+      <th>total time</th>
       <th>89</th>
       <th>38</th>
       <th>12.6</th>
 	  <th>10.7</th>
     </tr>
     <tr>
-      <th>计算时间</th>
+      <th>computing time</th>
       <th>79</th>
       <th>28</th>
       <th>2.4</th>
@@ -38,7 +38,7 @@ title: think in algorithm <1>
   </tbody>
 </table>
 
-JAVA实现：
+JAVA implementation：
 
 {% highlight java linenos=table %}
     public class BitSortTest {  

@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Think in algorithm part.1</title>
+    
+    <meta name="author" content="zolibra">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Ray's work</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Think in algorithm part.1 </h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h2 id='efficiency'>Efficiency</h2>
+<table border='1'>
+  <tbody>
+    <tr>
+      <th />
+      <th>System sort</th>
+      <th>C++/STL</th>
+      <th>C/qsort</th>
+      <th>C/bitmap</th>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th>total time</th>
+      <th>89</th>
+      <th>38</th>
+      <th>12.6</th>
+	  <th>10.7</th>
+    </tr>
+    <tr>
+      <th>computing time</th>
+      <th>79</th>
+      <th>28</th>
+      <th>2.4</th>
+	  <th>0.5</th>
+    </tr>
+      <th>MB</th>
+      <th>0.8</th>
+      <th>70</th>
+      <th>4</th>
+	  <th>1.25</th>	
+  </tbody>
+</table>
+<h2 id='java_implementation'>JAVA implementation</h2>
+
+<pre><code>public class BitSortTest {  
+    private static final int BITSPERWORD = 32;
+    private static final int SHIFT = 5;  
+    private static final int MASK = 0x1F; 
+    private static final int N = 10000000;  
+    private static int[] a = new int[(1 + N / BITSPERWORD)];  
+  
+    public static void main(String[] args) {  
+        bitsort(new int[]{1, 100, 2, 10000, 9999, 4567, 78902});  
+    }  
+  
+    public static void bitsort(int[] array) {  
+        for (int i = 0; i &lt; N; i++)  
+            clr(i); 
+        for (int i = 0; i &lt; array.length; i++)  
+            set(array[i]);  
+        for (int i = 0; i &lt; N; i++)  
+            if (test(i))  
+                System.out.println(i);  
+    }  
+  
+    public static void set(int i) {  
+        a[i &gt;&gt; SHIFT] |= (1 &lt;&lt; (i &amp; MASK));  
+    }  
+  
+    public static void clr(int i) {  
+        a[i &gt;&gt; SHIFT] &amp;= ~(1 &lt;&lt; (i &amp; MASK));  
+    }  
+  
+    public static boolean test(int i) {  
+        return (a[i &gt;&gt; SHIFT] &amp; (1 &lt;&lt; (i &amp; MASK))) == (1 &lt;&lt; (i &amp; MASK));  
+    }  
+}</code></pre>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2012/05/14/hello-world" title="Move Blog">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/2012/05/15/markdown-syntax" title="Markdown Syntax">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'zolibra'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>15 May 2012</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; zolibra 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

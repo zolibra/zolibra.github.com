@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Ray's work</title>
+ <link href="http://zolibra.github.com/atom.xml" rel="self"/>
+ <link href="http://zolibra.github.com"/>
+ <updated>2012-05-15T00:47:57+08:00</updated>
+ <id>http://zolibra.github.com</id>
+ <author>
+   <name>zolibra</name>
+   <email>zolibra@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Markdown Syntax</title>
+   <link href="http://zolibra.github.com/2012/05/15/markdown-syntax"/>
+   <updated>2012-05-15T00:00:00+08:00</updated>
+   <id>http://zolibra.github.com/2012/05/15/markdown-syntax</id>
+   <content type="html">&lt;h1 id='id47'&gt;标题&lt;/h1&gt;
+
+&lt;h1 id='this_is_an_h1'&gt;This is an H1&lt;/h1&gt;
+
+&lt;h2 id='this_is_an_h2'&gt;This is an H2&lt;/h2&gt;
+
+&lt;h1 id='blockquotes'&gt;Blockquotes&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id='id48'&gt;列表&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+
+&lt;li&gt;Green&lt;/li&gt;
+
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id='id49'&gt;代码&lt;/h1&gt;
+
+&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tell application &amp;quot;Foo&amp;quot;
+    beep
+end tell&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;h1 id='id50'&gt;链接&lt;/h1&gt;
+
+&lt;p&gt;This is &lt;a href='http://example.com/' title='Title'&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://example.net/'&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
+
+&lt;h1 id='id51'&gt;强调&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Think in algorithm part.1</title>
+   <link href="http://zolibra.github.com/2012/05/15/bitmap-algroithsm"/>
+   <updated>2012-05-15T00:00:00+08:00</updated>
+   <id>http://zolibra.github.com/2012/05/15/bitmap-algroithsm</id>
+   <content type="html">&lt;h2 id='efficiency'&gt;Efficiency&lt;/h2&gt;
+&lt;table border='1'&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th /&gt;
+      &lt;th&gt;System sort&lt;/th&gt;
+      &lt;th&gt;C++/STL&lt;/th&gt;
+      &lt;th&gt;C/qsort&lt;/th&gt;
+      &lt;th&gt;C/bitmap&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;total time&lt;/th&gt;
+      &lt;th&gt;89&lt;/th&gt;
+      &lt;th&gt;38&lt;/th&gt;
+      &lt;th&gt;12.6&lt;/th&gt;
+	  &lt;th&gt;10.7&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;computing time&lt;/th&gt;
+      &lt;th&gt;79&lt;/th&gt;
+      &lt;th&gt;28&lt;/th&gt;
+      &lt;th&gt;2.4&lt;/th&gt;
+	  &lt;th&gt;0.5&lt;/th&gt;
+    &lt;/tr&gt;
+      &lt;th&gt;MB&lt;/th&gt;
+      &lt;th&gt;0.8&lt;/th&gt;
+      &lt;th&gt;70&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+	  &lt;th&gt;1.25&lt;/th&gt;	
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id='java_implementation'&gt;JAVA implementation&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;public class BitSortTest {  
+    private static final int BITSPERWORD = 32;
+    private static final int SHIFT = 5;  
+    private static final int MASK = 0x1F; 
+    private static final int N = 10000000;  
+    private static int[] a = new int[(1 + N / BITSPERWORD)];  
+  
+    public static void main(String[] args) {  
+        bitsort(new int[]{1, 100, 2, 10000, 9999, 4567, 78902});  
+    }  
+  
+    public static void bitsort(int[] array) {  
+        for (int i = 0; i &amp;lt; N; i++)  
+            clr(i); 
+        for (int i = 0; i &amp;lt; array.length; i++)  
+            set(array[i]);  
+        for (int i = 0; i &amp;lt; N; i++)  
+            if (test(i))  
+                System.out.println(i);  
+    }  
+  
+    public static void set(int i) {  
+        a[i &amp;gt;&amp;gt; SHIFT] |= (1 &amp;lt;&amp;lt; (i &amp;amp; MASK));  
+    }  
+  
+    public static void clr(int i) {  
+        a[i &amp;gt;&amp;gt; SHIFT] &amp;amp;= ~(1 &amp;lt;&amp;lt; (i &amp;amp; MASK));  
+    }  
+  
+    public static boolean test(int i) {  
+        return (a[i &amp;gt;&amp;gt; SHIFT] &amp;amp; (1 &amp;lt;&amp;lt; (i &amp;amp; MASK))) == (1 &amp;lt;&amp;lt; (i &amp;amp; MASK));  
+    }  
+}&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Move Blog</title>
+   <link href="http://zolibra.github.com/2012/05/14/hello-world"/>
+   <updated>2012-05-14T00:00:00+08:00</updated>
+   <id>http://zolibra.github.com/2012/05/14/hello-world</id>
+   <content type="html">&lt;h2 id='1__create_a_new_repository'&gt;1 - Create a New Repository&lt;/h2&gt;
+
+&lt;p&gt;Go to your &lt;a href='https://github.com/'&gt;Github Dashboard&lt;/a&gt;and create a new repository named USERNAME.github.com&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rake post title=&amp;quot;Hello World&amp;quot;&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ 
+</feed>

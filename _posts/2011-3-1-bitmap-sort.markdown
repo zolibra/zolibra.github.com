@@ -38,7 +38,7 @@ title: think in algorithm <1>
   </tbody>
 </table>
 
-JAVA implementation£º
+JAVA implementationï¿½ï¿½
 
 {% highlight java linenos=table %}
     public class BitSortTest {  

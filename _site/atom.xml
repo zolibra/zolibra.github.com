@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Ray's work</title>
+ <link href="http://zolibra.github.com/atom.xml" rel="self"/>
+ <link href="http://zolibra.github.com"/>
+ <updated>2012-05-14T23:28:49+08:00</updated>
+ <id>http://zolibra.github.com</id>
+ <author>
+   <name>zolibra</name>
+   <email>zolibra@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Hello World</title>
+   <link href="http://zolibra.github.com/2012/05/14/hello-world"/>
+   <updated>2012-05-14T00:00:00+08:00</updated>
+   <id>http://zolibra.github.com/2012/05/14/hello-world</id>
+   <content type="html"></content>
+ </entry>
+ 
+ 
+</feed>

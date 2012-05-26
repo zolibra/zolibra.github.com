@@ -39,6 +39,7 @@ so we only need:
     reverse(0 , n-1);	/* defghABC */
 	
 C implement:
+
     void reverse(char [] arr, int start, int end){ 
         int mid = (start + end) / 2; 
         for(int s = start, i = 1; i < mid; s++, i++){ 

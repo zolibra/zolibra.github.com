@@ -16,9 +16,11 @@ in CCMS command-line:
     cd /vobs/isg/devenv/bin
 
 vi and edit the build_ctl file, add one line in the last line:
+
     force pin_sdk
 
 then save as it as build_ctl.once by :
+
     :w build_ctl.once
 
 after that you can schedule a build to do this force build.

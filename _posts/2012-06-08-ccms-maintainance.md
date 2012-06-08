@@ -6,7 +6,7 @@ category:
 tags: [CCMS, WORK, ClearCase]
 ---
 {% include JB/setup %}
-1.Force a Build
+Force a Build
 --------------
 
 take pin_sdk in bj_cs3444 for example:
@@ -23,7 +23,7 @@ then save as it as build_ctl.once by :
 
 after that you can schedule a build to do this force build.
 
-2.Change the build Tag:
+Change the build Tag:
 ------------------
 
 take bj_cs3444 for example, first of all, check-out the build_ctl file:

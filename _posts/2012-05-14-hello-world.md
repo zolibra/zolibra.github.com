@@ -12,4 +12,4 @@ tags: [jekyll]
 ---
 Go to your [Github Dashboard](https://github.com/)and create a new repository named USERNAME.github.com
 
-	rake post title="Hello World"
+	rake post title="Hello World!"

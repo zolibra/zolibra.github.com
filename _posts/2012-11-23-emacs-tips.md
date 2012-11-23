@@ -49,18 +49,21 @@ D:\Documents and Settings\hchen018\Application Data\.emacs
          M-a     移动到句首
          M-e     移动到句尾
                                   
-          M-<     移动到文章最开始
-          M->     移动到文章结尾
+         M-<     移动到文章最开始
+         M->     移动到文章结尾
          
 * 在 EMACS 失去响应的时候（WHEN EMACS IS HUNG）
-          C-g 终止命令
+-----------------
+         C-g 终止命令
          
 * 窗格（WINDOWS）
-          C-x 1   只保留一个窗格（也就是关掉其它所有窗格）
+-----------------
+         C-x 1   只保留一个窗格（也就是关掉其它所有窗格）
          
 * 插入与删除（INSERTING AND DELETING）
+-----------------
 
-          <Delback>    删除光标前的一个字符
+         <Delback>    删除光标前的一个字符
          C-d          删除光标后的一个字符
  
          M-<Delback>  移除光标前的一个词
@@ -68,31 +71,38 @@ D:\Documents and Settings\hchen018\Application Data\.emacs
  
          C-k          移除从光标到“行尾”间的字符
          M-k          移除从光标到“句尾”间的字符
-          C-@ 移动 C-w 移除选定的一部分缓冲区
+         C-@ 移动 C-w 移除选定的一部分缓冲区
 
 * 撤销（UNDO）
+-----------------
          C-x u     撤销
 
 * 文件（FILE）
+-----------------
          C-x C-f   寻找一个文件
          C-x C-s   储存这个文件
 
-* 缓冲区（BUFFER） 
+* 缓冲区（BUFFER）
+----------------- 
          C-x C-b   列出缓冲区
          C-x b foo   以回到文件“foo”的缓冲区
 
-* 搜索（SEARCHING） 
+* 搜索（SEARCHING)
+-----------------
+ 
          C-s      是向前搜索
          C-r      是向后搜索
 
  【你会发现 C-g 会让光标回到搜索开始的位置，而 <Return> 则让光标留在搜索结果上，这是很有用的功能。】 
 
 * 多窗格（MULTIPLE WINDOWS） 
+-----------------
          C-x 2     分成两个创个
          C-M-v    滚动下方的窗格    
          C-x o     将光标移动到下方窗格
 
 * 获得更多帮助（GETTING MORE HELP）   
+-----------------
       
         最基本的帮助功能是 C-h c。输入 C-h c 之后再输入一个组合键，Emacs 会给出
 这个命令的简要说明。      

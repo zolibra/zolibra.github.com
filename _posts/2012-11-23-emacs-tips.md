@@ -7,111 +7,111 @@ tags: []
 ---
 {% include JB/setup %}
 
-* ÅäÖÃÎÄ¼þÎ»ÖÃ£º
+* é…ç½®æ–‡ä»¶ä½ç½®ï¼š
           options-save options 
 D:\Documents and Settings\hchen018\Application Data\.emacs
 
 
-* Ð¡½á£¨SUMMARY£©
+* å°ç»“ï¼ˆSUMMARYï¼‰
 -----------------
  
-·­Ò³ä¯ÀÀÊ±Ïàµ±ÓÐÓÃ£º
+ç¿»é¡µæµè§ˆæ—¶ç›¸å½“æœ‰ç”¨ï¼š
  
-         C-v     ÏòÇ°ÒÆ¶¯Ò»ÆÁ
-         M-v     ÏòºóÒÆ¶¯Ò»ÆÁ
-         C-l     ÖØ»æÆÁÄ»£¬²¢½«¹â±êËùÔÚÐÐÖÃÓÚÆÁÄ»µÄÖÐÑë
-                 £¨×¢ÒâÊÇ CONTROL-L£¬²»ÊÇ CONTROL-1£©
+         C-v     å‘å‰ç§»åŠ¨ä¸€å±
+         M-v     å‘åŽç§»åŠ¨ä¸€å±
+         C-l     é‡ç»˜å±å¹•ï¼Œå¹¶å°†å…‰æ ‡æ‰€åœ¨è¡Œç½®äºŽå±å¹•çš„ä¸­å¤®
+                 ï¼ˆæ³¨æ„æ˜¯ CONTROL-Lï¼Œä¸æ˜¯ CONTROL-1ï¼‰
                    
-* »ù±¾µÄ¹â±ê¿ØÖÆ£¨BASIC CURSOR CONTROL£©
+* åŸºæœ¬çš„å…‰æ ‡æŽ§åˆ¶ï¼ˆBASIC CURSOR CONTROLï¼‰
 ----------------------------------------
  
  
-                              ÉÏÒ»ÐÐ C-p
+                              ä¸Šä¸€è¡Œ C-p
                                    :
                                    :
-             Ïò×óÒÆ C-b .... Ä¿Ç°¹â±êÎ»ÖÃ .... ÏòÓÒÒÆ C-f
+             å‘å·¦ç§» C-b .... ç›®å‰å…‰æ ‡ä½ç½® .... å‘å³ç§» C-f
                                    :
                                    :
-                              ÏÂÒ»ÐÐ C-n
+                              ä¸‹ä¸€è¡Œ C-n
                                     
                                     
-         C-f     ÏòÓÒÒÆ¶¯Ò»¸ö×Ö·û
-         C-b     Ïò×óÒÆ¶¯Ò»¸ö×Ö·û
+         C-f     å‘å³ç§»åŠ¨ä¸€ä¸ªå­—ç¬¦
+         C-b     å‘å·¦ç§»åŠ¨ä¸€ä¸ªå­—ç¬¦
  
-         M-f     ÏòÓÒÒÆ¶¯Ò»¸ö´Ê¡¾¶ÔÖÐÎÄÊÇÒÆ¶¯µ½ÏÂÒ»¸ö±êµã·ûºÅ¡¿
-         M-b     Ïò×óÒÆ¶¯Ò»¸ö´Ê¡¾¶ÔÖÐÎÄÊÇÒÆ¶¯µ½ÉÏÒ»¸ö±êµã·ûºÅ¡¿
+         M-f     å‘å³ç§»åŠ¨ä¸€ä¸ªè¯ã€å¯¹ä¸­æ–‡æ˜¯ç§»åŠ¨åˆ°ä¸‹ä¸€ä¸ªæ ‡ç‚¹ç¬¦å·ã€‘
+         M-b     å‘å·¦ç§»åŠ¨ä¸€ä¸ªè¯ã€å¯¹ä¸­æ–‡æ˜¯ç§»åŠ¨åˆ°ä¸Šä¸€ä¸ªæ ‡ç‚¹ç¬¦å·ã€‘
  
-         C-n     ÒÆ¶¯µ½ÏÂÒ»ÐÐ
-         C-p     ÒÆ¶¯µ½ÉÏÒ»ÐÐ
+         C-n     ç§»åŠ¨åˆ°ä¸‹ä¸€è¡Œ
+         C-p     ç§»åŠ¨åˆ°ä¸Šä¸€è¡Œ
  
-         C-a     ÒÆ¶¯µ½ÐÐÊ×
-         C-e     ÒÆ¶¯µ½ÐÐÎ²
+         C-a     ç§»åŠ¨åˆ°è¡Œé¦–
+         C-e     ç§»åŠ¨åˆ°è¡Œå°¾
  
-         M-a     ÒÆ¶¯µ½¾äÊ×
-         M-e     ÒÆ¶¯µ½¾äÎ²
+         M-a     ç§»åŠ¨åˆ°å¥é¦–
+         M-e     ç§»åŠ¨åˆ°å¥å°¾
                                   
-         M-<(shift)     ÒÆ¶¯µ½ÎÄÕÂ×î¿ªÊ¼
-         M->(shift)     ÒÆ¶¯µ½ÎÄÕÂ½áÎ²
+         M-<(shift)     ç§»åŠ¨åˆ°æ–‡ç« æœ€å¼€å§‹
+         M->(shift)     ç§»åŠ¨åˆ°æ–‡ç« ç»“å°¾
          
-* ÔÚ EMACS Ê§È¥ÏìÓ¦µÄÊ±ºò£¨WHEN EMACS IS HUNG£©
+* åœ¨ EMACS å¤±åŽ»å“åº”çš„æ—¶å€™ï¼ˆWHEN EMACS IS HUNGï¼‰
 -----------------
-         C-g ÖÕÖ¹ÃüÁî
+         C-g ç»ˆæ­¢å‘½ä»¤
          
-* ´°¸ñ£¨WINDOWS£©
+* çª—æ ¼ï¼ˆWINDOWSï¼‰
 -----------------
-         C-x 1   Ö»±£ÁôÒ»¸ö´°¸ñ£¨Ò²¾ÍÊÇ¹ØµôÆäËüËùÓÐ´°¸ñ£©
+         C-x 1   åªä¿ç•™ä¸€ä¸ªçª—æ ¼ï¼ˆä¹Ÿå°±æ˜¯å…³æŽ‰å…¶å®ƒæ‰€æœ‰çª—æ ¼ï¼‰
          
-* ²åÈëÓëÉ¾³ý£¨INSERTING AND DELETING£©
+* æ’å…¥ä¸Žåˆ é™¤ï¼ˆINSERTING AND DELETINGï¼‰
 -----------------
 
-         <Delback>    É¾³ý¹â±êÇ°µÄÒ»¸ö×Ö·û
-         C-d          É¾³ý¹â±êºóµÄÒ»¸ö×Ö·û
+         <Delback>    åˆ é™¤å…‰æ ‡å‰çš„ä¸€ä¸ªå­—ç¬¦
+         C-d          åˆ é™¤å…‰æ ‡åŽçš„ä¸€ä¸ªå­—ç¬¦
  
-         M-<Delback>  ÒÆ³ý¹â±êÇ°µÄÒ»¸ö´Ê
-         M-d          ÒÆ³ý¹â±êºóµÄÒ»¸ö´Ê
+         M-<Delback>  ç§»é™¤å…‰æ ‡å‰çš„ä¸€ä¸ªè¯
+         M-d          ç§»é™¤å…‰æ ‡åŽçš„ä¸€ä¸ªè¯
  
-         C-k          ÒÆ³ý´Ó¹â±êµ½¡°ÐÐÎ²¡±¼äµÄ×Ö·û
-         M-k          ÒÆ³ý´Ó¹â±êµ½¡°¾äÎ²¡±¼äµÄ×Ö·û
-         C-@ ÒÆ¶¯ C-w ÒÆ³ýÑ¡¶¨µÄÒ»²¿·Ö»º³åÇø
-	 C-u 8 *      Õâ½«»á²åÈë ********
-* ³·Ïú£¨UNDO£©
+         C-k          ç§»é™¤ä»Žå…‰æ ‡åˆ°â€œè¡Œå°¾â€é—´çš„å­—ç¬¦
+         M-k          ç§»é™¤ä»Žå…‰æ ‡åˆ°â€œå¥å°¾â€é—´çš„å­—ç¬¦
+         C-@ ç§»åŠ¨ C-w ç§»é™¤é€‰å®šçš„ä¸€éƒ¨åˆ†ç¼“å†²åŒº
+	 C-u 8 *      è¿™å°†ä¼šæ’å…¥ ********
+* æ’¤é”€ï¼ˆUNDOï¼‰
 -----------------
-         C-x u     ³·Ïú
+         C-x u     æ’¤é”€
 
-* ÎÄ¼þ£¨FILE£©
+* æ–‡ä»¶ï¼ˆFILEï¼‰
 -----------------
-         C-x C-f   Ñ°ÕÒÒ»¸öÎÄ¼þ
-         C-x C-s   ´¢´æÕâ¸öÎÄ¼þ
-	 C-x C-f Return ÓÃd±ê¼ÇÒ»¸öÎÄ¼þÎªD£¬ÓÃx²Ù×÷Í³Ò»É¾³ý
+         C-x C-f   å¯»æ‰¾ä¸€ä¸ªæ–‡ä»¶
+         C-x C-s   å‚¨å­˜è¿™ä¸ªæ–‡ä»¶
+	 C-x C-f Return ç”¨dæ ‡è®°ä¸€ä¸ªæ–‡ä»¶ä¸ºDï¼Œç”¨xæ“ä½œç»Ÿä¸€åˆ é™¤
 
-* »º³åÇø£¨BUFFER£©
+* ç¼“å†²åŒºï¼ˆBUFFERï¼‰
 ----------------- 
-         C-x C-b   ÁÐ³ö»º³åÇø
-         C-x b foo   ÒÔ»Øµ½ÎÄ¼þ¡°foo¡±µÄ»º³åÇø
+         C-x C-b   åˆ—å‡ºç¼“å†²åŒº
+         C-x b foo   ä»¥å›žåˆ°æ–‡ä»¶â€œfooâ€çš„ç¼“å†²åŒº
 
-* ËÑË÷£¨SEARCHING)
+* æœç´¢ï¼ˆSEARCHING)
 -----------------
  
-         C-s      ÊÇÏòÇ°ËÑË÷
-         C-r      ÊÇÏòºóËÑË÷
+         C-s      æ˜¯å‘å‰æœç´¢
+         C-r      æ˜¯å‘åŽæœç´¢
 
- ¡¾Äã»á·¢ÏÖ C-g »áÈÃ¹â±ê»Øµ½ËÑË÷¿ªÊ¼µÄÎ»ÖÃ£¬¶ø <Return> ÔòÈÃ¹â±êÁôÔÚËÑË÷½á¹ûÉÏ£¬ÕâÊÇºÜÓÐÓÃµÄ¹¦ÄÜ¡£¡¿ 
+ ã€ä½ ä¼šå‘çŽ° C-g ä¼šè®©å…‰æ ‡å›žåˆ°æœç´¢å¼€å§‹çš„ä½ç½®ï¼Œè€Œ <Return> åˆ™è®©å…‰æ ‡ç•™åœ¨æœç´¢ç»“æžœä¸Šï¼Œè¿™æ˜¯å¾ˆæœ‰ç”¨çš„åŠŸèƒ½ã€‚ã€‘ 
 
-* ¶à´°¸ñ£¨MULTIPLE WINDOWS£© 
+* å¤šçª—æ ¼ï¼ˆMULTIPLE WINDOWSï¼‰ 
 -----------------
-         C-x 2     ·Ö³ÉÁ½¸ö´´¸ö
-         C-M-v    ¹ö¶¯ÏÂ·½µÄ´°¸ñ    
-         C-x o     ½«¹â±êÒÆ¶¯µ½ÏÂ·½´°¸ñ
-* ºê (Macro)
+         C-x 2     åˆ†æˆä¸¤ä¸ªåˆ›ä¸ª
+         C-M-v    æ»šåŠ¨ä¸‹æ–¹çš„çª—æ ¼    
+         C-x o     å°†å…‰æ ‡ç§»åŠ¨åˆ°ä¸‹æ–¹çª—æ ¼
+* å® (Macro)
 ----------------
 
-	 F3		¿ªÊ¼Â¼ÖÆºê
-	 C-x C-k n	ÃüÃûºê
-	 F4  	 	Í£Ö¹Â¼ÖÆºê
-	 C-x e		Ö´ÐÐºê
+	 F3		å¼€å§‹å½•åˆ¶å®
+	 C-x C-k n	å‘½åå®
+	 F4  	 	åœæ­¢å½•åˆ¶å®
+	 C-x e		æ‰§è¡Œå®
 
-* »ñµÃ¸ü¶à°ïÖú£¨GETTING MORE HELP£©   
+* èŽ·å¾—æ›´å¤šå¸®åŠ©ï¼ˆGETTING MORE HELPï¼‰   
 -----------------
       
-        ×î»ù±¾µÄ°ïÖú¹¦ÄÜÊÇ C-h c¡£ÊäÈë C-h c Ö®ºóÔÙÊäÈëÒ»¸ö×éºÏ¼ü£¬Emacs »á¸ø³ö
-Õâ¸öÃüÁîµÄ¼òÒªËµÃ÷¡£      
+        æœ€åŸºæœ¬çš„å¸®åŠ©åŠŸèƒ½æ˜¯ C-h cã€‚è¾“å…¥ C-h c ä¹‹åŽå†è¾“å…¥ä¸€ä¸ªç»„åˆé”®ï¼ŒEmacs ä¼šç»™å‡º
+è¿™ä¸ªå‘½ä»¤çš„ç®€è¦è¯´æ˜Žã€‚      

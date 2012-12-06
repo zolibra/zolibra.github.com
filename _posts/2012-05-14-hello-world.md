@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "为什么用github写博客"
+title: "为什么用Github写博客"
 tags: [jekyll]
 ---
 {% include JB/setup %}

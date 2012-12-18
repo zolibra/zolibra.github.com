@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "简单就是好“
+title: "简单就是好"
 description: ""
 category: 
 tags: [python,lisp,c,java]

@@ -1,28 +1,27 @@
 ---
 layout: post
-title: "�򵥾��Ǻ�"
+title: "简单就是好"
 description: ""
 category: 
 tags: [python,lisp,c,java]
 ---
 {% include JB/setup %}
 
-���ű�����Եķ�չ��Խ��Խ�������׷��򵥵ľ䷨���Ӵ�Ŀ⣬����Ƚ���һ�£����Եķ�չ�ƺ��ֻص���ԭʼ��50�����tmd�ٴα���ĳЩ����һ�ٱ顣
-��Hello worldΪ����һ���򵥵ıȽ�
+随着编程语言的发展，越来越多的语言追求简单的句法，本文以Hello World程序为例比较主流编程语言的句法简介程度
 
-���ŵ�Lisp���Է�����������50�����
+优雅的Lisp语言发明与上世纪50年代，他的发明者是一个数学家，所以。。
 ------
 
    ('Hello world)
 	
-Unix shell������������60�����bell labs
+Unix shell诞生于上世界60年代的bell labs
 ------
 
 	#!/bin/bash
 	echo "Hello World"
 	
 	
-C����70���������ͬ������bell labs...
+C语言于70年代诞生，同样Bell labs出品
 ------
 
     void main(){
@@ -43,7 +42,7 @@ JAVA......
 Python
 ------
 
-	print ��Hello World"
+	print "Hello World"
 	
 Ruby
 -----
@@ -51,6 +50,6 @@ Ruby
 	puts "Hello World"
 	
 	
-����������û�������ڷ�չ�˰������֮��Խ��Խ������Lisp����
+看出趋势没？语言在发展了半个世纪之后似乎又回到了他最初的形态，简介就是美！
 	
 	

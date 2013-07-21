@@ -1,7 +1,7 @@
 ---
 layout: page
-title: This is Anfield!
-tagline: Liverpool, Geek, Hiking
+title: Stay Hunry, Stay Foolish!
+tagline: Geek, Soccer, Hiking
 ---
 {% include JB/setup %}
 

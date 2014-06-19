@@ -2,7 +2,7 @@
 layout: post
 title: "Think In Tomcat part1"
 description: ""
-category: 
+category: "架构"
 tags: [Tomcat, Java, OpenSource]
 ---
 {% include JB/setup %}

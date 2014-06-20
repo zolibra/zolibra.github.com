@@ -60,13 +60,13 @@ tags: [sublime, java]
 在 Ubuntu 下使用以下命令替换
 `"cmd": ["runJava.sh", "$file_base_name"],`
 
-PS: 另外还有不需要runjava脚本的方法：
+###PS: 另外还有不需要runjava脚本的方法：
 
 在Mac下配置 java 环境：
 
-###在选项卡Preferences > Browse Packages.. 打开sublime的包目录
-###转到Java Folder
-###打开 JavaC.sublime-build 替换为下面的命令行
+1. 在选项卡Preferences > Browse Packages.. 打开sublime的包目录
+2. 转到Java Folder
+3. 打开 JavaC.sublime-build 替换为下面的命令行
 
     {
         "cmd": ["sh", "-c", "javac $file_base_name.java && java $file_base_name"],

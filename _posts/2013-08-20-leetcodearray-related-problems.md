@@ -7,7 +7,7 @@ tags: [java, algorithsm, array]
 ---
 {% include JB/setup %}
 
-###Problem 1：
+###Problem 1：Reverse string word by word
 Given an input string, reverse the string word by word.
 
 For example,
@@ -58,4 +58,18 @@ Reduce them to a single space in the reversed string.
 
 	String[] newArray = s.split("\\s+");
 
-不知道大Inter门会不会challenge用正则。。
+不知道大Inter们会不会challenge用正则。
+
+###Problems 2: Evaluate Reverse Polish Notation
+
+Evaluate the value of an arithmetic expression in [Reverse Polish Notation](http://en.wikipedia.org/wiki/Reverse_Polish_notation).
+
+Valid operators are +, -, *, /. Each operand may be an integer or another expression.
+
+Some examples:
+	
+	["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
+    ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
+    
+**Solution1:**
+

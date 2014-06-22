@@ -49,7 +49,7 @@ Reduce them to a single space in the reversed string.
         return newStr.toString().trim();
     }
 
-也可以替换以下代码：
+也可以替换以下代码, 注意：*Split接受的是正则表达式*
 
     String s2 = s.replaceAll(" +" ," ");
     String[] newArray = s2.split(" ");
@@ -71,5 +71,39 @@ Some examples:
 	["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
     ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
     
-**Solution1:**
+**Solution1:** 利用堆栈
 
+    private static int evalRPN(String[] tokens) {
+        if (tokens == null | tokens.length == 0){
+            return 0;
+        }
+
+        Stack<Integer> stack= new Stack<Integer>();
+        for (int i = 0; i < tokens.length; i++) {
+            if (!isOperator(tokens[i])){
+                stack.add(Integer.parseInt(tokens[i]));
+            }else {
+                if (stack.size() < 2)continue;
+                int a = stack.pop();
+                int b = stack.pop();
+                if (tokens[i].equalsIgnoreCase("+")){
+                    stack.add(b + a);
+                }else if (tokens[i].equalsIgnoreCase("-")){
+                    stack.add(b - a);
+                }else if (tokens[i].equalsIgnoreCase("*")){
+                    stack.add(b * a);
+                }else if (tokens[i].equalsIgnoreCase("/")){
+                    if (b == 0 || a == 0){
+                        stack.add(0);
+                        continue;
+                    }
+                    stack.add(b / a);
+
+                }
+            }
+        }
+
+        return stack.pop();
+    }
+    
+注意pop出来的两组数的操作顺序

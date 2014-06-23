@@ -77,7 +77,6 @@ Some examples:
         if (tokens == null | tokens.length == 0){
             return 0;
         }
-
         Stack<Integer> stack= new Stack<Integer>();
         for (int i = 0; i < tokens.length; i++) {
             if (!isOperator(tokens[i])){
@@ -98,12 +97,10 @@ Some examples:
                         continue;
                     }
                     stack.add(b / a);
-
                 }
             }
         }
-
         return stack.pop();
     }
     
-注意pop出来的两组数的操作顺序
+注意pop出来的两组数的操作顺序。

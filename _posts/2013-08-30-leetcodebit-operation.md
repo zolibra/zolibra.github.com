@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[leetcode]位运算集合"
+title: "[leetcode]Single Number"
 description: ""
 category: 
 tags: [leetcode, java, bit]

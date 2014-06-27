@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[leetcode]数组问题集合"
+title: "[leetcode]数组问题Reverse string & Evaluate Reverse Polish Notation"
 description: ""
 category: 
 tags: [java, algorithsm, array]

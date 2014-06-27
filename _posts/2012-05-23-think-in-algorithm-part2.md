@@ -30,7 +30,7 @@ Maybe most of us will implement as like this:
     }
 	
 but maybe we only need a hand turn over:
-![hand turn](http://img1.51cto.com/attachment/201105/150335209.png)
+![hand turn](http://zolibra.github.io/assets/images/reverse.png)
 
 so we only need:
 

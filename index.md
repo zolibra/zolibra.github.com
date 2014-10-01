@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stay Hunry, Stay Foolish!
-tagline: Geek, Soccer, Hiking
+tagline: Hacker, Soccer, Hiking
 ---
 {% include JB/setup %}
 

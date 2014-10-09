@@ -3,7 +3,7 @@ layout: post
 title: "[leetcode]树的遍历"
 description: ""
 category: 
-tags: [TreeNode, java]
+tags: [leetcode, TreeNode, java]
 ---
 {% include JB/setup %}
 

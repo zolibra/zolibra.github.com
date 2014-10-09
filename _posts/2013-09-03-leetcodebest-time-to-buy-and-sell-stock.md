@@ -3,7 +3,7 @@ layout: post
 title: "[leetcode]Best Time to Buy and Sell Stock"
 description: ""
 category: 
-tags: [array, java]
+tags: [leetcode, array, java]
 ---
 {% include JB/setup %}
 

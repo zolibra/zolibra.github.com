@@ -4,8 +4,8 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
-markdown: rdiscount
-pygments: true
+markdown: kramdown
+highlighter: rouge
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -32,6 +32,10 @@ production_url : http://zolibra.github.com
 #
 JB :
   version : 0.2.13
+
+  # Define the theme name for asset path generation
+  theme :
+    name : twitter
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
